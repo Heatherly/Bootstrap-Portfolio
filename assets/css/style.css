@@ -1,9 +1,16 @@
 /*My styling modifications to a Bootswatch theme "United"*/
 
+html { /*used for "sticky footer" */
+  position: relative;
+  min-height: 100%;
+}
+
 body {
 	background-image: url(../images/cream_pixels.png);
 	background-repeat: repeat;
 	background-color: transparent;
+	  /* Margin bottom by footer height  (plus a little top margin spacing) */
+  	margin-bottom: 100px;
 }
 
 .navbar { /*removing top rounded corner*/
@@ -14,7 +21,7 @@ body {
 }
 .container .jumbotron {
 	padding-right: 10px;
-	padding-top: 100px;
+	padding-top: 80px;
 }
 
 .jumbotron {
@@ -32,6 +39,7 @@ body {
 	letter-spacing: 2.5px;
 	color: #f5f5f5;
 	background-color: #333;
+	line-height: 1.5;
 	padding: 10px;
 }
 
@@ -47,11 +55,12 @@ body {
 	margin: -20px 0 20px ;
 }
 
-#profilePicture {
-	width: 250px;
-	float:left;
-	border-radius: 6px;
-	margin: 0 10px 10px 0;
+p:after {
+	margin-bottom: 50px;
+}
+
+.gap-right {
+  margin-right: 10px; 
 }
 
 /*ASIDE/PANEL STYLING*/
@@ -62,11 +71,28 @@ body {
 }
 
 /* FOOTER STYLING */
-.footer { 
+.footer {
+	position: absolute;
+  	bottom: 0;
+  	width: 100%;
+  	height: 60px;
 	background-color: #f5f5f5;
 	padding: 20px 0;
-	margin-top: 100px;
 	text-align: center;
 	border-top: 1px solid #dddddd;
 	border-radius: 6px;
+}
+
+/* Media Query styling to fix profile picture alignment/size issue on smaller screens */
+
+@media (max-width: 360px) {
+	.pull-left {
+	float: none !important;
+	margin-bottom: 10px;
+	width: 100%;
+	}
+
+	.gap-right {
+	margin-right: 0;
+	}
 }
