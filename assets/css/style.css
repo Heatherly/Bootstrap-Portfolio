@@ -63,9 +63,14 @@ p:after {
   margin-right: 10px; 
 }
 
+.relative {
+		position: relative;
+		display: inline-block;
+		text-align: center;
+}
+
 .portfolioPic {
 	margin: 0 auto 20px;
-	position: relative;
 }
 
 .portfolioBanner {
@@ -115,3 +120,4 @@ p:after {
 	margin-right: 0;
 	}
 }
+
