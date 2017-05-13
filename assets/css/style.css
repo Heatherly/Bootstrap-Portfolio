@@ -86,6 +86,11 @@ p:after {
 	color: #ffffff;
 	font-size: 16px;
 }
+
+#contactForm {
+	padding-bottom: 30px;
+}
+
 /*ASIDE/PANEL STYLING*/
 
 .icon {
