@@ -63,6 +63,25 @@ p:after {
   margin-right: 10px; 
 }
 
+.portfolioPic {
+	margin: 0 auto 20px;
+	position: relative;
+}
+
+.portfolioBanner {
+	position: absolute;
+	bottom: 40px;
+	height: 40px;
+	width: 100%;
+	padding: 8px;
+	background-color: #735;
+	text-align: center;
+	}
+
+.portfolioBanner a {
+	color: #ffffff;
+	font-size: 16px;
+}
 /*ASIDE/PANEL STYLING*/
 
 .icon {
